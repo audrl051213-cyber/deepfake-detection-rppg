@@ -1,3 +1,4 @@
+# 하이퍼 파라미터 설정할 수 있도록 수정, 데이터 증강도 넣음
 import torch
 import torch.nn as nn
 import torch.optim as optim
