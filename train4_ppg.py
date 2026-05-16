@@ -1,3 +1,4 @@
+# train3를 더 좋은 방향으로 살짝 수정, 수정된 부분은 이해하기 쉽게 주석처리 되어있음
 import torch
 import torch.nn as nn
 import torch.optim as optim
