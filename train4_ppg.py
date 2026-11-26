@@ -73,7 +73,7 @@ class PPGClassifier(nn.Module):
         # [train3 대비 변경] 특징 압축을 위한 AdaptiveAvgPool2d 레이어 명시적 추가
         self.pool = nn.AdaptiveAvgPool2d((1, 1))
         
-        self.lstm = nn.LSTM(input_size=self.feature_dim, hidden_dim=hidden_dim, num_layers=1, batch_first=True)
+        self.lstm = nn.LSTM(input_size=self.feature_dim, hidden_size=hidden_dim, num_layers=1, batch_first=True)
         
         self.fc = nn.Sequential(
             nn.Linear(hidden_dim, 64),
